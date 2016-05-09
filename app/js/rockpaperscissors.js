@@ -25,14 +25,32 @@ function getPlayerMove(move) {
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `getInput()`.
-    return /* Your Expression */;
+	var pMove;
+	
+	if(move !=null){
+	
+		pMove =move;
+	}
+	else{
+		pMove =getInput();
+	}
+    return pMove/* Your Expression */;
 }
 
 function getComputerMove(move) {
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `randomPlay()`.
-    return /* Your Expression */;
+   var cMove;
+	
+	if(move !=null){
+	
+		cMove =move;
+	}
+	else{
+		cMove =getInput();
+	}
+    return pMove/* Your Expression */;
 }
 
 function getWinner(playerMove,computerMove) {
