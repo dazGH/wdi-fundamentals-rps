@@ -24,7 +24,7 @@ function randomPlay() {
 
 function validateInput(move) {
 	//Function to validate that the move entered by player is valid
-	if(move==='' || move ===null){
+	if(move==='' || move ===null || move ===undefined){
 		
 		return false;	
 	}
@@ -56,7 +56,7 @@ function getComputerMove(move) {
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `randomPlay()`.
    	
-	while(move ===''  || move ===null){
+	while(move ===''  || move ===null || move ===undefined){
 	
 		move =randomPlay();
 	}
